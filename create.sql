@@ -1,23 +1,26 @@
 CREATE TABLE publisher(
-    id SERIAL PRIMARY KEY,
+    id INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
     name TEXT,
     country TEXT
 );
 
 CREATE TABLE books(
-    id SERIAL PRIMARY KEY,
+    id INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
     title TEXT,
-    publisher SERIAL REFERENCES publisher(id)
+    publisher INTEGER,
+    FOREIGN KEY(publisher) REFERENCES publisher(id)
 );
 
 CREATE TABLE subjects(
-    id SERIAL PRIMARY KEY,
+    id INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
     name TEXT
 );
 
 CREATE TABLE books_subjects(
-    book SERIAL REFERENCES books(id),
-    subject SERIAL REFERENCES subjects(id)
+    book INTEGER,
+    subject INTEGER,
+    FOREIGN KEY(book) REFERENCES books(id),
+    FOREIGN KEY(subject) REFERENCES subjects(id)
 );
 
 

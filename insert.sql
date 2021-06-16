@@ -1,12 +1,3 @@
-INSERT INTO books (title, publisher) values ('The C Programming Language',1);
-INSERT INTO books (title, publisher) values ('The Go Programming Language',1);
-INSERT INTO books (title, publisher) values ('The UNIX Programming Environment ',1);
-INSERT INTO books (title, publisher) values ('Cryptonomicon',2);
-INSERT INTO books (title, publisher) values ('Deep Work',3);
-INSERT INTO books (title, publisher) values ('Atomic Habits',4);
-INSERT INTO books (title, publisher) values ('The City and The City',5);
-INSERT INTO books (title, publisher) values ('The Great War for Civilisation',6);
-
 INSERT INTO subjects (name) values ('C');
 INSERT INTO subjects (name) values ('UNIX');
 INSERT INTO subjects (name) values ('Technology');
@@ -23,6 +14,15 @@ INSERT INTO publisher (name, country) values ('GCP', 'USA');
 INSERT INTO publisher (name, country) values ('Avery ', 'USA');
 INSERT INTO publisher (name, country) values ('Del Rey', 'UK');
 INSERT INTO publisher (name, country) values ('Vintage', 'UK');
+
+INSERT INTO books (title, publisher) values ('The C Programming Language',1);
+INSERT INTO books (title, publisher) values ('The Go Programming Language',1);
+INSERT INTO books (title, publisher) values ('The UNIX Programming Environment ',1);
+INSERT INTO books (title, publisher) values ('Cryptonomicon',2);
+INSERT INTO books (title, publisher) values ('Deep Work',3);
+INSERT INTO books (title, publisher) values ('Atomic Habits',4);
+INSERT INTO books (title, publisher) values ('The City and The City',5);
+INSERT INTO books (title, publisher) values ('The Great War for Civilisation',6);
 
 INSERT INTO books_subjects (book, subject) values (1,1);
 INSERT INTO books_subjects (book, subject) values (1,2);
